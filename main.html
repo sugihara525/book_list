@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>book_list</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <!-- <label for="name">本の名前</label> -->
+    <form action="/submit" method="post">
+      <div>
+        <label for="name">本の名前</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="本の名前を入力してください。"
+        />
+      </div>
+
+      <div>
+        <label for="date">購入日</label>
+        <input
+          type="date"
+          id="date"
+          name="date"
+          placeholder="本の購入日を入力してください。"
+        />
+      </div>
+
+      <div>
+        <button type="submit">送信</button>
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,7 +1,9 @@
 from fastapi import FastAPI
+from fastapi.responses import HTMLResponse
 
 app = FastAPI()
 
-@app.get("/")
+@app.get("/", response_class=HTMLResponse)
 def read_root():
-    return {"The GOAT is Roger"}
+    with open("main.html", "r", encoding="utf-8") as f:
+        return f.read()
